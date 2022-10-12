@@ -1,0 +1,10 @@
+services:
+  kitchen_restaurant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+networks:
+  default:
+    name: restaurant
